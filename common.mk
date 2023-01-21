@@ -26,13 +26,15 @@ PRODUCT_PACKAGES += \
     AntHalService-Soong \
     com.dsi.ant@1.0.vendor
 
+# Force disable updating of APEXes when flatten APEX flag is enabled
+ifeq ($(OVERRIDE_TARGET_FLATTEN_APEX),true)
+PRODUCT_PRODUCT_PROPERTIES += ro.apex.updatable=false
+endif
+
 # OPlusExtras
 PRODUCT_PACKAGES += \
     OPlusExtras \
     tri-state-key-calibrate
-
-# APEX
-$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Atrace
 PRODUCT_PACKAGES += \
