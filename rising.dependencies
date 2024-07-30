@@ -1,0 +1,27 @@
+[
+  {
+    "repository": "hardware-oplus",
+    "target_path": "hardware/oplus"
+  },
+  {
+    "remote": "github",
+    "repository": "LineageOS/android_kernel_oneplus_sm8250",
+    "branch": "lineage-21",
+    "target_path": "kernel/oneplus/sm8250"
+  },
+  {
+    "remote": "github",
+    "repository": "Broly1/hardware_dolby",
+    "branch": "14",
+    "target_path": "hardware/dolby"
+  },
+  {
+    "remote": "bitbucket",
+    "repository": "nameless-aosp/vendor_oneplus_camera/src/fourteen/",
+    "target_path": "vendor/oneplus/camera"
+  },
+  {
+    "repository": "vendor_oneplus_sm8250-common",
+    "target_path": "vendor/oneplus/sm8250-common"
+  }
+]
